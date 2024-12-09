@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .red_box{
+    width: 200px;
+    height: 200px;
+    background:rebeccapurple;
+    margin-top: 10px;
+    }
+    .green_box{
+        width:200px;
+        height:200px;
+        background: rosybrown;
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+    for(let x=1; x<10; x++){
+        if (x<5){
+            let red_box="<div class='red_box'>hey</div>";
+            document.getElementById('result').innerHTML+=red_box;
+        }else{
+            let green_box="<div class='green_box'>hy</div>";
+            document.getElementById('result').innerHTML+=green_box;
+        }
+    }
+    </script>
+</body>
+</html>
